@@ -1,11 +1,11 @@
 // Service Worker básico para permitir a instalação do PWA offline
 const CACHE_NAME = 'bolos-amandy-v1';
 const assets = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/logotipo.jpg',
-  '/manifest.json'
+  './',
+  './index.html',
+  './style.css',
+  './logotipo.jpg',
+  './manifest.json'
 ];
 
 self.addEventListener('install', e => {
