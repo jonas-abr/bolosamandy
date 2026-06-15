@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da Amandy | Delícias Caseiras</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff5722">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <img src="logotipo.jpg" alt="Logotipo Bolos da Amandy" class="main-logo">
+            <h1>Bolos da Amandy</h1>
+            <p>O verdadeiro sabor caseiro com o toque que você ama!</p>
+            <a href="https://wa.me/5513988095745" target="_blank" class="btn-main">Faça seu Pedido pelo WhatsApp</a>
+        </div>
+    </header>
+
+    <section class="cardapio">
+        <div class="container">
+            <h2>Nosso Cardápio</h2>
+            <p class="subtitle-cardapio">Escolha suas delícias favoritas e faça seu pedido</p>
+            
+            <div class="categoria-section">
+                <h3 class="categoria-titulo">🍰 Bolos Caseiros Tradicionais</h3>
+                <div class="grid-bolos">
+                    
+                    <div class="card-bolo">
+                        <div class="bolo-img-container">
+                            <img src="https://link-da-imagem-do-menudino.com/bolo1.jpg" alt="Bolo Caseiro" class="bolo-foto" onerror="this.src='logotipo.jpg'">
+                        </div>
+                        <div class="card-body">
+                            <h3>Bolo Caseiro Simples</h3>
+                            <p>Massa super fofinha, perfeito para o café da tarde. Opções: Milho, Fubá, Cenoura ou Chocolate.</p>
+                            <div class="card-footer-item">
+                                <span class="preco">R$ 22,00</span>
+                                <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20pedir%20um%20Bolo%20Caseiro%20Simples" target="_blank" class="btn-pedir">Pedir</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-bolo">
+                        <div class="bolo-img-container">
+                            <img src="https://link-da-imagem-do-menudino.com/bolo2.jpg" alt="Bolo de Cenoura com Chocolate" class="bolo-foto" onerror="this.src='logotipo.jpg'">
+                        </div>
+                        <div class="card-body">
+                            <h3>Cenoura com Cobertura</h3>
+                            <p>O clássico bolo de cenoura com uma camada generosa de cobertura de chocolate caseira.</p>
+                            <div class="card-footer-item">
+                                <span class="preco">R$ 28,00</span>
+                                <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20pedir%20um%20Bolo%20de%20Cenoura%20com%20Cobertura" target="_blank" class="btn-pedir">Pedir</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="categoria-section">
+                <h3 class="categoria-titulo">🌋 Bolos Vulcão & Especiais</h3>
+                <div class="grid-bolos">
+                    
+                    <div class="card-bolo">
+                        <div class="bolo-img-container">
+                            <img src="https://link-da-imagem-do-menudino.com/volcano.jpg" alt="Bolo Vulcão" class="bolo-foto" onerror="this.src='logotipo.jpg'">
+                        </div>
+                        <div class="card-body">
+                            <h3>Bolo Vulcão de Ninho com Nutella</h3>
+                            <p>Corte uma fatia e veja a mágica acontecer. Muita cobertura cremosa de Ninho e Nutella legítima.</p>
+                            <div class="card-footer-item">
+                                <span class="preco">R$ 45,00</span>
+                                <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20pedir%20um%20Bolo%20Vulcão" target="_blank" class="btn-pedir">Pedir</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-bolo">
+                        <div class="bolo-img-container">
+                            <img src="https://link-da-imagem-do-menudino.com/ganache.jpg" alt="Bolo Piscina / Caseirinho" class="bolo-foto" onerror="this.src='logotipo.jpg'">
+                        </div>
+                        <div class="card-body">
+                            <h3>Bolo Piscina de Chocolate (Ganache)</h3>
+                            <p>Massa de chocolate premium com o centro repleto de ganache cremoso estruturado na proporção perfeita.</p>
+                            <div class="card-footer-item">
+                                <span class="preco">R$ 38,00</span>
+                                <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20pedir%20um%20Bolo%20Piscina%20Ganache" target="_blank" class="btn-pedir">Pedir</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bolos da Amandy. Todos os direitos reservados.</p>
+            <p>Criado com ❤️ para adoçar sua vida.</p>
+        </div>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log('PWA: Service Worker Ativo!'))
+                .catch(err => console.log('Erro ao registrar Service Worker:', err));
+        }
+    </script>
+</body>
+</html>

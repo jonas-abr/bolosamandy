@@ -1,0 +1,234 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Cabeçalho / Hero (Inspirado no fundo azul do logo) */
+.hero {
+    background: linear-gradient(135deg, #0d2347 0%, #1a3a6c 100%);
+    color: white;
+    padding: 60px 0;
+    border-bottom: 8px solid #ff5722; /* Laranja do logo */
+}
+
+.main-logo {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.main-logo:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Botão de Chamada para Ação */
+.btn-main {
+    display: inline-block;
+    background-color: #ff5722; /* Laranja */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 87, 34, 0.6);
+}
+
+/* Seção de Cardápio / Grid Responsivo */
+.cardapio {
+    padding: 60px 0;
+}
+
+.cardapio h2 {
+    font-size: 2rem;
+    color: #0d2347;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.grid-bolos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-bolo {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card-bolo:hover {
+    transform: translateY(-5px);
+}
+
+.bolo-img-placeholder {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.card-bolo h3 {
+    margin-bottom: 10px;
+    color: #0d2347;
+}
+
+/* Customizações extras para o Cardápio Estilo App */
+.subtitle-cardapio {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.categoria-section {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.categoria-titulo {
+    font-size: 1.5rem;
+    color: #0d2347;
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.grid-bolos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card-bolo {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #eee;
+}
+
+.card-bolo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.bolo-img-container {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+}
+
+.bolo-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a foto não fique esticada */
+    transition: transform 0.3s ease;
+}
+
+.card-bolo:hover .bolo-foto {
+    transform: scale(1.04);
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.card-body h3 {
+    font-size: 1.25rem;
+    color: #0d2347;
+    margin-bottom: 8px;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-footer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.preco {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2e7d32; /* Verde profissional para valor */
+}
+
+.btn-pedir {
+    background-color: #ff5722;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.btn-pedir:hover {
+    background-color: #e64a19;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0d2347;
+    color: white;
+    padding: 30px 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}

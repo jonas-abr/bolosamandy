@@ -1,0 +1,17 @@
+{
+  "short_name": "Bolos Amandy",
+  "name": "Bolos da Amandy - Confeitaria Caseira",
+  "icons": [
+    {
+      "src": "logotipo.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#0d2347",
+  "theme_color": "#ff5722",
+  "display": "standalone",
+  "orientation": "portrait"
+}
